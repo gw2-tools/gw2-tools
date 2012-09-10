@@ -16,12 +16,23 @@
 			.mat-count
 			{
 				font-size: 32px;
-				padding: 10px !important;
 				vertical-align: middle !important;
+				width: auto !important;
 			}
 			.stat-active
 			{
 				vertical-align: middle !important;
+			}
+			.mat-column-header
+			{
+				width: auto;
+				horizontal-align: middle;
+				text-align: middle;
+			}
+			.craft-table-caption
+			{
+				text-align:left;
+				padding: 5px;
 			}
 		</style>
 
@@ -91,235 +102,255 @@
 
 				<section id="tailor">
 					<div class="page-header">
-						<h1>Tailor - Exalted Set (80lvl, light, exotic)</h1>
+						<h1>Tailor</h1>
 					</div>
+
+					<h5>
+						Exalted Set
+						<span class="label label-inverse">light</span>
+						<span class="label label-inverse">80lvl</span>
+						<span class="label label-inverse">exotic</span>
+					</h5>
 
 					<table class="table table-bordered table-striped responsive-utilities">
 						<thead>
 							<tr>
-								<td colspan="2"></td>
-								<td>
+								<th width="0%"></th>
+								<th width="100%"></th>
+								<th class="mat-column-header">
 									<img src="./images/gossamer_scrap.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="<ul><li>Drops in high-level locations</li><li>Salvaging of high-level light armor</li><li>Trading post</li></ul>"
 										 data-original-title="Gossamer Scrap" />
-								</td>
-								<td>
+								</th>
+								<th class="mat-column-header">
 									<img src="./images/hardened_leather_section.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="<ul><li>Drops in high-level locations</li><li>Salvaging of high-level medium armor</li><li>Trading post</li></ul>"
 										 data-original-title="Hardened Leather Section" />
-								</td>
-								<td>
+								</th>
+								<th class="mat-column-header">
 									<img src="./images/gossamer_thread.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="Sold by [Master Tailor] in stacks of 10 for 6s 40c per stack"
 										 data-original-title="Gossamer Thread" />
-								</td>
-								<td>
+								</th>
+								<th class="mat-column-header">
 									<img src="./images/ectoplasm.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="<ul><li>Salvaging of high-level high-quality items (low chance)</li><li>Trading post</li></ul>"
 										 data-original-title="Glob of Ectoplasm" />
-								</td>
-								<td>
+								</th>
+								<th class="mat-column-header">
 									<img src="./images/unknown.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-content="<ul><li>Drops in high-level locations</li><li>Trading post</li></ul>Options:<p><img src='./images/powerful_blood.png' class='img-rounded' style='margin: 2px' /><img src='./images/ancient_bone.png' class='img-rounded' style='margin: 2px' /><img src='./images/armored_scale.png' class='img-rounded' style='margin: 2px' /><img src='./images/elaborate_totem.png' class='img-rounded' style='margin: 2px' /><img src='./images/powerful_venom_sac.png' class='img-rounded' style='margin: 2px' /><img src='./images/vicious_claw.png' class='img-rounded' style='margin: 2px' /><img src='./images/vicious_fang.png' class='img-rounded' style='margin: 2px' /></p>"
 										 data-trigger="hover"
 										 data-original-title="400lvl Fine Crafting Material" />
-								</td>
+								</th>
 							</tr>
 						</thead>
-						<tr valign="center"> <!-- head armor -->
-							<td><img src="./images/exalted_helm.png" class="img-rounded" /></td>
-							<td><p>Exalted Masque</p><small>Head Armor</small></td>
-							<td class="mat-count">14</td>
-							<td class="mat-count">2</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- shoulder armor -->
-							<td><img src="./images/exalted_shoulders.png" class="img-rounded" /></td>
-							<td><p>Exalted Mantle</p><small>Shoulder Armor</small></td>
-							<td class="mat-count">14</td>
-							<td class="mat-count">2</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- chest armor -->
-							<td><img src="./images/exalted_chest.png" class="img-rounded" /></td>
-							<td><p>Exalted Coat</p><small>Chest Armor</small></td>
-							<td class="mat-count">20</td>
-							<td class="mat-count">2</td>
-							<td class="mat-count">23</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- hand armor -->
-							<td><img src="./images/exalted_gloves.png" class="img-rounded" /></td>
-							<td><p>Exalted Gloves</p><small>Hand Armor</small></td>
-							<td class="mat-count">14</td>
-							<td class="mat-count">2</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- leg armor -->
-							<td><img src="./images/exalted_pants.png" class="img-rounded" /></td>
-							<td><p>Exalted Pants</p><small>Leg Armor</small></td>
-							<td class="mat-count">20</td>
-							<td class="mat-count">0</td>
-							<td class="mat-count">23</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- foot armor -->
-							<td><img src="./images/exalted_boots.png" class="img-rounded" /></td>
-							<td><p>Exalted Boots</p><small>Foot Armor</small></td>
-							<td class="mat-count">14</td>
-							<td class="mat-count">4</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- complete set -->
-							<td></td>
-							<td style="vertical-align:middle !important;">Complete Set</td>
-							<td class="mat-count">96</td>
-							<td class="mat-count">16</td>
-							<td class="mat-count">130</td>
-							<td class="mat-count">30</td>
-							<td class="mat-count">30</td>
-						</tr>
+						<tbody>
+							<tr valign="center"> <!-- head armor -->
+								<td><img src="./images/exalted_helm.png" class="img-rounded" /></td>
+								<td><p>Exalted Masque</p><small>Head Armor</small></td>
+								<td class="mat-count">14</td>
+								<td class="mat-count">2</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- shoulder armor -->
+								<td><img src="./images/exalted_shoulders.png" class="img-rounded" /></td>
+								<td><p>Exalted Mantle</p><small>Shoulder Armor</small></td>
+								<td class="mat-count">14</td>
+								<td class="mat-count">2</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- chest armor -->
+								<td><img src="./images/exalted_chest.png" class="img-rounded" /></td>
+								<td><p>Exalted Coat</p><small>Chest Armor</small></td>
+								<td class="mat-count">20</td>
+								<td class="mat-count">2</td>
+								<td class="mat-count">23</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- hand armor -->
+								<td><img src="./images/exalted_gloves.png" class="img-rounded" /></td>
+								<td><p>Exalted Gloves</p><small>Hand Armor</small></td>
+								<td class="mat-count">14</td>
+								<td class="mat-count">2</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- leg armor -->
+								<td><img src="./images/exalted_pants.png" class="img-rounded" /></td>
+								<td><p>Exalted Pants</p><small>Leg Armor</small></td>
+								<td class="mat-count">20</td>
+								<td class="mat-count">0</td>
+								<td class="mat-count">23</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- foot armor -->
+								<td><img src="./images/exalted_boots.png" class="img-rounded" /></td>
+								<td><p>Exalted Boots</p><small>Foot Armor</small></td>
+								<td class="mat-count">14</td>
+								<td class="mat-count">4</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr class="info"> <!-- complete set -->
+								<td></td>
+								<td style="vertical-align:middle !important;">Complete Set</td>
+								<td class="mat-count">96</td>
+								<td class="mat-count">16</td>
+								<td class="mat-count">130</td>
+								<td class="mat-count">30</td>
+								<td class="mat-count">30</td>
+							</tr>
+						</tbody>
 					</table>
 				</section>
 
 				<section id="leatherworker">
 					<div class="page-header">
-						<h1>Leatherworker - Emblazoned Set (80lvl, medium, exotic)</h1>
+						<h1>Leatherworker</h1>
 					</div>
+
+					<h5>
+						Emblazoned Set
+						<span class="label label-inverse">medium</span>
+						<span class="label label-inverse">80lvl</span>
+						<span class="label label-inverse">exotic</span>
+					</h5>
 
 					<table class="table table-bordered table-striped responsive-utilities">
 						<thead>
 							<tr>
-								<td colspan="2"></td>
-								<td>
+								<th width="0%"></th>
+								<th width="100%"></th>
+								<th>
 									<img src="./images/gossamer_scrap.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="<ul><li>Drops in high-level locations</li><li>Salvaging of high-level light armor</li><li>Trading post</li></ul>"
 										 data-original-title="Gossamer Scrap" />
-								</td>
-								<td>
+								</th>
+								<th>
 									<img src="./images/hardened_leather_section.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="<ul><li>Drops in high-level locations</li><li>Salvaging of high-level medium armor</li><li>Trading post</li></ul>"
 										 data-original-title="Hardened Leather Section" />
-								</td>
-								<td>
+								</th>
+								<th>
 									<img src="./images/gossamer_thread.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="Sold by [Master Tailor] in stacks of 10 for 6s 40c per stack"
 										 data-original-title="Gossamer Thread" />
-								</td>
-								<td>
+								</th>
+								<th>
 									<img src="./images/ectoplasm.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-trigger="hover"
 										 data-content="<ul><li>Salvaging of high-level high-quality items (low chance)</li><li>Trading post</li></ul>"
 										 data-original-title="Glob of Ectoplasm" />
-								</td>
-								<td>
+								</th>
+								<th>
 									<img src="./images/unknown.png" class="img-rounded"
 										 rel="popover"
 										 data-placement="bottom"
 										 data-content="<ul><li>Drops in high-level locations</li><li>Trading post</li></ul>Options:<p><img src='./images/powerful_blood.png' class='img-rounded' style='margin: 2px' /><img src='./images/ancient_bone.png' class='img-rounded' style='margin: 2px' /><img src='./images/armored_scale.png' class='img-rounded' style='margin: 2px' /><img src='./images/elaborate_totem.png' class='img-rounded' style='margin: 2px' /><img src='./images/powerful_venom_sac.png' class='img-rounded' style='margin: 2px' /><img src='./images/vicious_claw.png' class='img-rounded' style='margin: 2px' /><img src='./images/vicious_fang.png' class='img-rounded' style='margin: 2px' /></p>"
 										 data-trigger="hover"
 										 data-original-title="400lvl Fine Crafting Material" />
-								</td>
+								</th>
 							</tr>
 						</thead>
-						<tr valign="center"> <!-- head armor -->
-							<td><img src="./images/exalted_helm.png" class="img-rounded" /></td>
-							<td><p>Emblazoned Helm</p><small>Head Armor</small></td>
-							<td class="mat-count">14</td>
-							<td class="mat-count">2</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- shoulder armor -->
-							<td><img src="./images/exalted_shoulders.png" class="img-rounded" /></td>
-							<td><p>Emblazoned Shoulders</p><small>Shoulder Armor</small></td>
-							<td class="mat-count">12</td>
-							<td class="mat-count">4</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- chest armor -->
-							<td><img src="./images/exalted_chest.png" class="img-rounded" /></td>
-							<td><p>Emblazoned Coat</p><small>Chest Armor</small></td>
-							<td class="mat-count">12</td>
-							<td class="mat-count">10</td>
-							<td class="mat-count">23</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- hand armor -->
-							<td><img src="./images/exalted_gloves.png" class="img-rounded" /></td>
-							<td><p>Emblazoned Gloves</p><small>Hand Armor</small></td>
-							<td class="mat-count">12</td>
-							<td class="mat-count">4</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- leg armor -->
-							<td><img src="./images/exalted_pants.png" class="img-rounded" /></td>
-							<td><p>Emblazoned Pants</p><small>Leg Armor</small></td>
-							<td class="mat-count">12</td>
-							<td class="mat-count">8</td>
-							<td class="mat-count">23</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- foot armor -->
-							<td><img src="./images/exalted_boots.png" class="img-rounded" /></td>
-							<td><p>Emblazoned Boots</p><small>Foot Armor</small></td>
-							<td class="mat-count">10</td>
-							<td class="mat-count">12</td>
-							<td class="mat-count">21</td>
-							<td class="mat-count">5</td>
-							<td class="mat-count">5</td>
-						</tr>
-						<tr> <!-- complete set -->
-							<td></td>
-							<td style="vertical-align:middle !important;">Complete Set</td>
-							<td class="mat-count">72</td>
-							<td class="mat-count">30</td>
-							<td class="mat-count">130</td>
-							<td class="mat-count">30</td>
-							<td class="mat-count">30</td>
-						</tr>
+						<tbody>
+							<tr valign="center"> <!-- head armor -->
+								<td><img src="./images/exalted_helm.png" class="img-rounded" /></td>
+								<td><p>Emblazoned Helm</p><small>Head Armor</small></td>
+								<td class="mat-count">14</td>
+								<td class="mat-count">2</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- shoulder armor -->
+								<td><img src="./images/exalted_shoulders.png" class="img-rounded" /></td>
+								<td><p>Emblazoned Shoulders</p><small>Shoulder Armor</small></td>
+								<td class="mat-count">12</td>
+								<td class="mat-count">4</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- chest armor -->
+								<td><img src="./images/exalted_chest.png" class="img-rounded" /></td>
+								<td><p>Emblazoned Coat</p><small>Chest Armor</small></td>
+								<td class="mat-count">12</td>
+								<td class="mat-count">10</td>
+								<td class="mat-count">23</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- hand armor -->
+								<td><img src="./images/exalted_gloves.png" class="img-rounded" /></td>
+								<td><p>Emblazoned Gloves</p><small>Hand Armor</small></td>
+								<td class="mat-count">12</td>
+								<td class="mat-count">4</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- leg armor -->
+								<td><img src="./images/exalted_pants.png" class="img-rounded" /></td>
+								<td><p>Emblazoned Pants</p><small>Leg Armor</small></td>
+								<td class="mat-count">12</td>
+								<td class="mat-count">8</td>
+								<td class="mat-count">23</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- foot armor -->
+								<td><img src="./images/exalted_boots.png" class="img-rounded" /></td>
+								<td><p>Emblazoned Boots</p><small>Foot Armor</small></td>
+								<td class="mat-count">10</td>
+								<td class="mat-count">12</td>
+								<td class="mat-count">21</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr class="info"> <!-- complete set -->
+								<td></td>
+								<td style="vertical-align:middle !important;">Complete Set</td>
+								<td class="mat-count">72</td>
+								<td class="mat-count">30</td>
+								<td class="mat-count">130</td>
+								<td class="mat-count">30</td>
+								<td class="mat-count">30</td>
+							</tr>
+						</tbody>
 					</table>
 				</section>
 
@@ -330,15 +361,15 @@
 
 					<table class="table table-bordered table-striped responsive-utilities">
 						<thead>
-							<td></td>
-							<td>Condition Damage</td>
-							<td>Critical Damage</td>
-							<td>Healing Power</td>
-							<td>Power</td>
-							<td>Precision</td>
-							<td>Toughness</td>
-							<td>Vitality</td>
-							<td>Magic Find</td>
+							<th width="0%"></th>
+							<th>Condition Damage</th>
+							<th>Critical Damage</th>
+							<th>Healing Power</th>
+							<th>Power</th>
+							<th>Precision</th>
+							<th>Toughness</th>
+							<th>Vitality</th>
+							<th>Magic Find</th>
 						</thead>
 						<tr>
 							<td>
