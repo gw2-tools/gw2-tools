@@ -34,6 +34,10 @@
 				text-align:left;
 				padding: 5px;
 			}
+			.modal-body
+			{
+				max-height: 800px;
+			}
 		</style>
 
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -81,6 +85,7 @@
 							<li><a href="#tailor"><i class="icon-chevron-right"></i> Tailor</a></li>
 							<li><a href="#leatherworker"><i class="icon-chevron-right"></i> Leatherworker</a></li>
 							<li><a href="#armorsmith"><i class="icon-chevron-right"></i> Armorsmith</a></li>
+							<li><a href="#jeweler"><i class="icon-chevron-right"></i> Jeweler</a></li>
 						</ul>
 					</div>
 					<div class="bs-docs-sidebar">
@@ -215,7 +220,26 @@
 								<td class="mat-count">5</td>
 							</tr>
 							<tr class="info"> <!-- complete set -->
-								<td></td>
+								<td>
+									<a href="#exalted-set-preview" role="button" class="btn" data-toggle="modal">Preview</a>
+									<div class="modal hide"
+										 id="exalted-set-preview"
+										 tabindex="-1"
+										 role="dialog"
+										 aria-labelledby="exalted-set-preview-label"
+										 aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="exalted-set-preview-label">Exalted Set</h3>
+										</div>
+										<div class="modal-body">
+											<img src="./images/exalted_set_preview.jpg" />
+										</div>
+										<div class="modal-footer">
+											<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+										</div>
+									</div>
+								</td>
 								<td style="vertical-align:middle !important;">Complete Set</td>
 								<td class="mat-count">96</td>
 								<td class="mat-count">16</td>
@@ -342,13 +366,89 @@
 								<td class="mat-count">5</td>
 							</tr>
 							<tr class="info"> <!-- complete set -->
-								<td></td>
+								<td>
+								</td>
 								<td style="vertical-align:middle !important;">Complete Set</td>
 								<td class="mat-count">72</td>
 								<td class="mat-count">30</td>
 								<td class="mat-count">130</td>
 								<td class="mat-count">30</td>
 								<td class="mat-count">30</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="jeweler">
+					<div class="page-header">
+						<h1>Jeweler</h1>
+					</div>
+
+					<h5>
+						Orichalcum Set
+						<span class="label label-inverse">80lvl</span>
+						<span class="label label-inverse">exotic</span>
+					</h5>
+
+					<table class="table table-bordered table-striped responsive-utilities">
+						<thead>
+							<tr>
+								<th width="0%"></th>
+								<th width="100%"></th>
+								<th>
+									<img src="./images/unknown.png" class="img-rounded"
+										 rel="popover"
+										 data-placement="bottom"
+										 data-trigger="hover"
+										 data-content="<ul><li>Mined in high-level locations</li><li>Salvaging of high-level equipment</li><li>Trading post</li></ul>"
+										 data-original-title="Orichalcum Ore" />
+								</th>
+								<th>
+									<img src="./images/ectoplasm.png" class="img-rounded"
+										 rel="popover"
+										 data-placement="bottom"
+										 data-trigger="hover"
+										 data-content="<ul><li>Salvaging of high-level high-quality items (low chance)</li><li>Trading post</li></ul>"
+										 data-original-title="Glob of Ectoplasm" />
+								</th>
+								<th>
+									<img src="./images/unknown.png" class="img-rounded"
+										 rel="popover"
+										 data-placement="bottom"
+										 data-content="<ul><li>Mined from high-level ore</li><li>Transmuted from 300lvl stones</li><li>Trading post</li></ul>Options:<p></p>"
+										 data-trigger="hover"
+										 data-original-title="400lvl Orb" />
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr> <!-- amulet -->
+								<td><img src="./images/unknown.png" class="img-rounded" /></td>
+								<td><p>Orichalcum Amulet</p><small>Amulet</small></td>
+								<td class="mat-count">32</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr valign="center"> <!-- earrings -->
+								<td><img src="./images/unknown.png" class="img-rounded" /></td>
+								<td><p>Orichalcum Earring</p><small>Earring</small></td>
+								<td class="mat-count">28</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr> <!-- rings -->
+								<td><img src="./images/unknown.png" class="img-rounded" /></td>
+								<td><p>Orichalcum Ring</p><small>Ring</small></td>
+								<td class="mat-count">30</td>
+								<td class="mat-count">5</td>
+								<td class="mat-count">5</td>
+							</tr>
+							<tr class="info"> <!-- complete set -->
+								<td></td>
+								<td style="vertical-align:middle !important;">Complete Set</td>
+								<td class="mat-count">148</td>
+								<td class="mat-count">25</td>
+								<td class="mat-count">25</td>
 							</tr>
 						</tbody>
 					</table>
@@ -507,6 +607,7 @@
 					{
 						var $window = $(window);
 						$("[rel=popover]").popover({ html: true });
+						$(".modal").modal({ keyboard: true, show: false });
 						$('.app-sidebar').affix(
 							{ offset:
 								{
